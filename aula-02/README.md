@@ -1,0 +1,2 @@
+# aula-02 
+na aula 02 aprendemos mais conceitos referentesao HTML como comandos de estilo de texto,como fazer uma lista ordenada,criar links dentro do site,criar um botão que redireciona para o site desejado,espaçamento entre palavras,numeração de cores e tec.
