@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        body {
+            background-image: url('canva.jpg');
+            background-size: contain;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
+        .conteiner {
+            margin-top: 100px; 
+            height: 2000px;
+            width: 800px;
+            margin:0 auto;
+            background-color: white;
+            border: 1px solid white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('canva.jpg');
+            
+        }
+        video {
+            width: 500px;
+            height: 300px;
+        }
+        .menu-top {
+            background-color: white;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            padding-left: 200px;
+            top: 0;
+            display:flex;
+        }
+        .titulo-home{
+            margin-top:6px;
+            margin-left:4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-top">
+        <img src="icon.svg">
+        <h1 class="titulo-home">Página Home</h1>
+    </div>
+
+
+    <div class="conteiner">
+        <video src="kylie.mp4" autoplay controls muted></video>
+    </div>
+
+    <div class="conteiner">
+        <img src="icon.svg">
+    </div>
+
+   
+</body>
+</html>
