@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasse</title>
+    <style>
+        /*exemplo de hover*/
+        .button-hover:hover{
+            background-color: lightpink;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*exemplo de active*/
+        .button-active:active{
+            transform: scale(0.95);
+        }
+        /*exemplo de focus*/
+        .input-focus:focus{
+            color: blueviolet;
+            background-color: aqua;
+        }
+        /*exemplo de checked*/
+        .radio-checked:checked{
+            transform:scale(1.5);
+    }
+    .checkbox-checked:checked{
+        transform:scale(1.5);
+    }
+    /*exemplo de pseudoclasse para link*/
+    a:link{
+        color:brown;
+    }
+    a:visited{
+        color:rgb(43, 226, 205);
+    }
+
+    .div-vazia{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div>
+    <h3>exemplo de hover</h3>
+    <button class="button-hover">clique aqui!</button>
+</div>
+<div>
+    <h3>exemplo de active</h3>
+    <button class="button-active">clique aqui!</button>
+</div>
+
+<div>
+    <h3>exemplo de focus</h3>
+    <input type="text" class="input-focus" placeholder="clique aqui">
+</div>
+
+<div>
+    <h3>exemplo de checked</h3>
+    <label>radio button</label>
+    <input type="radio" class="radio-checked"><input type="radio" class="radio-checked">
+    <label>checkbox</label>
+    <input type="checkbox" class="checkbox-checked">
+
+</div>
+
+<div>
+    <h3>exemplo de pseudoclasse</h3>
+    <a href="#">link 1</a> 
+    <a href="#">link 2</a> 
+    <a href="#">link 3</a> 
+    <a href="#">link 4</a> 
+    <a href="#">link 5</a> 
+    <a href="#">link 6</a> 
+    <a href="#">link 7</a> 
+    <a href="#">link 8</a> 
+    <a href="#">link 9</a> 
+    <a href="#">link 10</a> 
+</div>
+<div class="div-vazia"></div>
+</body>
+</html>

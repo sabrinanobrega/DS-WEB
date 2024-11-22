@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            background-color: #ffd700;
+            
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+
+       
+        .scale {
+            background-color: #ff33e0;
+            animation: scale-animation 2s infinite alternate;
+        }
+        @keyframes scale-animation {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        
+        .rotate {
+            background-color: #7a33ff;
+            animation: rotate-animation 2s infinite linear;
+        }
+        @keyframes rotate-animation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+        .translate {
+            background-color: #33ffda;
+            animation: translate-animation 2s infinite alternate;
+        }
+        @keyframes translate-animation {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(50px, 50px);
+            }
+        }
+
+       
+        .border-radius {
+            background-color: #ff33a6;
+            animation: border-radius-animation 2s infinite alternate;
+        }
+        @keyframes border-radius-animation {
+            from {
+                border-radius: 0;
+            }
+            to {
+                border-radius: 50%;
+            }
+        }
+
+        
+        .opacity {
+            background-color: #a633ff;
+            animation: opacity-animation 2s infinite alternate;
+        }
+        @keyframes opacity-animation {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.2;
+            }
+        }
+
+        
+        .keyframes {
+            background-color: #ff0000;
+            animation: custom-keyframes 3s infinite;
+        }
+        @keyframes custom-keyframes {
+            0% {
+                transform: scale(1);
+                border-radius: 0;
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2) rotate(45deg);
+                border-radius: 25%;
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1) rotate(0);
+                border-radius: 0;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box scale">scale</div>
+    <div class="box rotate">rotate</div>
+    <div class="box translate">translate</div>
+    <div class="box border-radius">border-radius</div>
+    <div class="box opacity">opacity</div>
+    <div class="box keyframes">Keyfra</div>
+    </body>
+    </html>

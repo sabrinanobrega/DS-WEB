@@ -1,0 +1,1 @@
+aprendemos sobre display na aula 8 e também sobre pseudoclasse,botões diferentes e etc.
