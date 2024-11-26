@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 elementos</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(135deg, #3d6389, #096f7e);
+      
+      
+    }
+    
+    .container {
+      display: flex;
+      width: 80%;
+    }
+
+    .object {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    
+    .scale {
+      background-color: #f94144;
+      animation: scaleAnim 2s infinite alternate;
+    }
+
+    @keyframes scaleAnim {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.5);
+      }
+    }
+
+    .rotate {
+      background-color: #f3722c;
+      animation: rotateAnim 2s infinite linear;
+    }
+
+    @keyframes rotateAnim {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .translate {
+      background-color: #f9c74f;
+      animation: translateAnim 2s infinite alternate;
+    }
+
+    @keyframes translateAnim {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-30px);
+      }
+    }
+
+    .border-radius {
+      background-color: #90be6d;
+      animation: borderRadiusAnim 2s infinite alternate;
+    }
+
+    @keyframes borderRadiusAnim {
+      from {
+        border-radius: 0%;
+      }
+      to {
+        border-radius: 50%;
+      }
+    }
+
+    .opacity {
+      background-color: #43aa8b;
+      animation: opacityAnim 2s infinite alternate;
+    }
+
+    @keyframes opacityAnim {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0.5;
+      }
+    }
+
+    .keyframes {
+      background-color: #577590;
+      animation: keyframesAnim 2s infinite alternate;
+    }
+
+    @keyframes keyframesAnim {
+      from {
+        transform: translateX(0) rotate(0deg);
+      }
+      to {
+        transform: translateX(30px) rotate(45deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="object scale">scale</div>
+    <div class="object rotate">rotate</div>
+    <div class="object translate">translate</div>
+    <div class="object border-radius">radius</div>
+    <div class="object opacity">opacity</div>
+    <div class="object keyframes">keyframes</div>
+  </div>
+</body>
+</html>
+
+
