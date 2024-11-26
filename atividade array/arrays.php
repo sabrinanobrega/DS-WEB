@@ -1,5 +1,5 @@
 <?php
-// array de frutas
+
 $frutas = ["Maçã", "Banana", "Laranja", "Uva", "Manga"];
 
 $frutas []= "abacaxi";
@@ -7,12 +7,12 @@ $frutas []= "abacaxi";
 sort($frutas);
 print_r($frutas);
 
-//  foreach para exibir elemento
+
 foreach ($frutas as $fruta) {
     echo $fruta . "<br><br>";
 }
 
-// Criando um array associativo para o produto
+
 $produto = [
     "nome" => "Produtos",
     "preco" => 9999,
@@ -21,7 +21,7 @@ $produto = [
 
 $produto["preco"] = 4999;
 
-// Exibindo as informações em formato de lista
+
 echo "<ul>";
 foreach ($produto as $chave => $valor) {
     echo "<li>" . ucfirst($chave) . ": " . $valor . "</li>";
@@ -31,7 +31,7 @@ echo "</ul>";
 $unidadesVendidas = 5;
 $valorTotal = $produto["preco"] * $unidadesVendidas;
 
-// Exibindo o valor total da venda
+
 echo "Venda de $unidadesVendidas unidades: R$ " . number_format($valorTotal, 2, ',', '.') . "<br>";
 
 $nomes = ["Teclado", "Mouse", "Monitor"];
