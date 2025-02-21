@@ -177,12 +177,31 @@ function calculadora() {
 
   //questao 12
   function verificarTriangulo(){
-    var lado1 = Number(window.document.getElementById("valorizando").value);
-    
-    var lado2= Number(window.document.getElementById("valorizando").value);
-
-    var lado3= Number(window.document.getElementById("valorizando").value);
+    var lado1 = Number(window.document.getElementById("lado1").value);
+   
+    var lado2= Number(window.document.getElementById("lado2").value);
+  
+    var lado3= Number(window.document.getElementById("lado3").value);
+  
+    var resultado = document.getElementById("resultado50");
+  
+  
+  
+    if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+        if (lado1 === lado2 && lado2 === lado3) {
+            resultado = "É um triângulo equilátero (todos os lados iguais).";
+        } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+            resultado = "É um triângulo isósceles (dois lados iguais).";
+        } else {
+            resultado = "É um triângulo escaleno (todos os lados diferentes).";
+        }
+    } else {
+        resultado.textContent = "Os lados fornecidos não formam um triângulo válido.";
+        resultado.style.color = "red";
+    }
+    document.getElementById("resultado50").innerHTML = resultado;
   }
+  
 
   //questao 13
 
@@ -203,3 +222,29 @@ a.innerText = 'Saiu!'
 a.style.background = 'blue'
 a.style.width='300px'
 }
+
+//questao 14
+var contador30 = document.querySelector('.badge');
+
+document.querySelector('button14').addEventListener('click', function(){
+  var numero14 = parseInt(contador30.textContent) + 1;
+  contador30.textContent = numero14;
+});
+
+
+//questao 15
+document.addEventListener("DOMContentLoaded", DIV);
+ 
+  function DIV(){
+
+  var div = document.createElement("div")
+  div.style.width = "1500px";
+  div.style.height = "500px";
+  div.style.backgroundColor = "pink";
+  div.style.color = "green";
+  div.style.display = "center";
+  div.innerText = "Seja bem-vindo!!!";
+
+  document.body.appendChild(div);
+ 
+  }
