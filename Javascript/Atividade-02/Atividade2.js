@@ -224,12 +224,7 @@ a.style.width='300px'
 }
 
 //questao 14
-var contador30 = document.querySelector('.badge');
 
-document.querySelector('button14').addEventListener('click', function(){
-  var numero14 = parseInt(contador30.textContent) + 1;
-  contador30.textContent = numero14;
-});
 
 
 //questao 15

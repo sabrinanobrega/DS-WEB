@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Gerador de Cartões</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .cartao {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+        }
+       
+    </style>
 </head>
 <body>
-    <h1>gerador de cartões</h1>
-<input type="text" id="nome" placeholder="Digite  seu nome">
-<input type="text" id="cartoesLista" placeholder="Digite a descrição">
-<br>
-    <button onclick="adicionarCartoes() ">Criar cartão</button>
-    <br>
-   
+    <h2>Gerador de Cartões Dinâmicos</h2>
+    <input type="text" id="nome" placeholder="Digite o nome">
+    <input type="text" id="descricao" placeholder="Digite a descrição">
+    <button onclick="criarCartao()">Criar Cartão</button>
+    <div id="container"></div>
+
+    <script>
+        function criarCartao() {
+            const nome = document.getElementById("nome").value;
+            const descricao = document.getElementById("descricao").value;
+           
+           
+            const cartao = document.createElement("div");
+            cartao.setAttribute("class", "cartao");
+           
+            const titulo = document.createElement("h3");
+            titulo.textContent = nome;
+           
+            const texto = document.createElement("p");
+            texto.textContent = descricao;
+           
+            const botaoExcluir = document.createElement("button");
+            botaoExcluir.textContent = "Excluir";
+            botaoExcluir.onclick = function() {
+                cartao.remove();
+            };
+           
+            cartao.appendChild(botaoExcluir);
+            cartao.appendChild(titulo);
+            cartao.appendChild(texto);
+           
+            document.getElementById("container").appendChild(cartao);
+           
+            document.getElementById("nome").value = "";
+            document.getElementById("descricao").value = "";
+        }
+    </script>
 </body>
-<script src="script.js"></script>
 </html>
+
