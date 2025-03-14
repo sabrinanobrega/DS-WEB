@@ -1,0 +1,167 @@
+body {
+    background-color: #18a09c;
+}
+
+/* Código CSS do Menu Horizontal*/
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+ul {
+    padding-inline-start: 0em;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    list-style: none;
+}
+li .meumenu {
+   font-family: 'open_sansbold';
+   font-size: 1.6em;
+   text-decoration: none;
+   color: #000000;
+   border: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   transition: border-bottom .3s linear;
+}
+p {
+    font-family: Verdana;
+ }
+li .meumenu:hover {
+    border-bottom: 4px solid #53b8b1;
+}
+li .meumenu-active {
+    border-bottom: 4px solid #020209;
+}
+.container {
+    margin: 0 auto;
+    width: 600px;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    background: rgba(133, 239, 227, 0.755);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+    font-family: Verdana;
+ }
+form{
+    width: 100%;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+input[type=submit] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+p {
+    font-family: Verdana;
+ }
+input:hover[type=submit] {
+    background-color: #5bb9b0;
+}
+.erro-input{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+/*Definindo o estilo da tabela de dados do cliente*/
+
+#clientes {
+  font-family: Arial, Helvetica, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#clientes td, #clintes th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#clientes tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#clientes tr:hover {
+    background-color: #958d8d;
+}
+
+#clientes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1bc9af;
+  color: rgb(0, 0, 0);
+}
+p {
+    font-family: Verdana;
+ }
+
+#clientes a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Definindo o estilo da tabela de dados do cliente*/
+#produtos {
+    font-family: Arial, Helvetica, serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+ 
+ 
+  #produtos td, #produtos th {
+    border: 1px solid #ffffff;
+    padding: 8px;
+  }
+ 
+  #produtos tr:nth-child(even){
+      background-color: #ffffff;
+  }
+ 
+  #produtos tr:hover {
+      background-color: #ffffff;
+  }
+ 
+  #produtos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1bc9af;
+    color: rgb(0, 0, 0);
+  }
+  p {
+      font-family: Verdana;
+   }
+ 
+  #produtos a {
+      text-decoration: none;
+      color: black;
+  }
