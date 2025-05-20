@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #04AA6D;
+}
+
+
+.link-usuario{
+    float: right;
+}
+
+
+/*Estilo para usuario*/
+
+.container {
+    margin:20px auto 0 auto;
+    width: 600px;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form{
+    width: 100%;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=submit] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:hover[type=submit] {
+    background-color: #218838;
+}
+
+/* Mensagens de erro */
+.erro-input {
+    color: red;
+    font-size: 15px;
+}
+
+/*Estilo para foto de usuário */
+
+.div-photo{
+    padding-right: 20px; 
+}
+
+.div-photo p{
+    color:#666;
+    text-align: center;
+}
+
+.photo-user{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.div-button-edit{
+    margin: 0 auto;
+    width: 180px;
+}
+.button-edit{
+    margin-top: 15px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #0080ff;
+    background-color: white;
+    color: #0080ff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-edit:hover {
+    background-color: #0080ff;
+}
+/* Título principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+   text-align: left;
+  }
+  
+  /* Tabela de produtos */
+  .table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #32bc1a;
+    color: white;
+  }
