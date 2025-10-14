@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joias da Sabrina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Joias da Sabrina</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active text-white" href="#">Início</a>
+            <a class="nav-link text-white" href="#">Sobre</a>
+            <a class="nav-link text-white" href="#">Contato</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container bg-primary text-white p-4 my-5 rounded" style="margin-top:100px;">
+      <div class="alert alert-light" role="alert">
+        Bem-vindo à Joias da Sabrina! Descubra peças únicas e elegantes para todas as ocasiões.
+      </div>
+      <h1>Bem-vindo à Joias da Sabrina!</h1>
+      <button type="button" class="btn btn-dark mt-2">Saiba mais</button>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="anel.jpg" class="d-block mx-auto img-fluid" alt="Anel de ouro" style="max-height:600px; object-fit:contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Anéis Elegantes</h5>
+            <p>Encontre o anel perfeito para cada momento especial.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="relogio.jpg" class="d-block mx-auto img-fluid" alt="Relógio de luxo" style="max-height:600px; object-fit:contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Relógios Sofisticados</h5>
+            <p>Marque seu tempo com estilo e elegância.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bracelete.jpg" class="d-block mx-auto img-fluid" alt="Bracelete moderno" style="max-height:600px; object-fit:contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Braceletes Modernos</h5>
+            <p>O toque final que completa seu look com charme.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="anel.jpg" class="card-img-top" alt="Anel">
+            <div class="card-body">
+              <h5 class="card-title">Anéis Elegantes</h5>
+              <p class="card-text">Explore nossa coleção de anéis finos e sofisticados.</p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="relogio.jpg" class="card-img-top" alt="Relógio">
+            <div class="card-body">
+              <h5 class="card-title">Relógios Sofisticados</h5>
+              <p class="card-text">Design moderno e elegância para seu dia a dia.</p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="bracelete.jpg" class="card-img-top" alt="Bracelete">
+            <div class="card-body">
+              <h5 class="card-title">Braceletes Modernos</h5>
+              <p class="card-text">Complete seu look com estilo e charme.</p>
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+            Anéis
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Explore nossa coleção de anéis finos e sofisticados, perfeitos para todas as ocasiões.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Relógios
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Relógios de luxo e design moderno que unem funcionalidade e elegância.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Braceletes
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Braceletes únicos e elegantes, ideais para complementar seu estilo.</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-5">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modal">Entre em contato</button>
+    </div>
+
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fale Conosco</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Preencha o formulário abaixo para entrar em contato.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+          <form class="p-3">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+ 
+    <footer class="bg-dark text-white text-center py-3">
+      © 2025 - Criado por Sabrina Moraes da Nóbrega - Todos os direitos reservados.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
